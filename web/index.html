@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<meta name="description" content="List of Grocery items to buy" />
+		<meta name="theme-color" content="#FFFFFF" />
+		<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="./assets/css/style.css" />
+                <link rel="apple-touch-icon" href="./apple-touch-icon.png">
+                <link rel="manifest" href="./manifest.json">
+		<script src="./assets/js/middleware.js"></script>
+		<title>Grocery</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<!-- Header -->
+			<div class="header">
+				
+                <span class="iconHolder plusIcon" title="Click to Add Contents">
+                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="plus-square" class="svg-inline--fa fa-plus-square fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+						<path
+							fill="currentColor"
+							d="M352 240v32c0 6.6-5.4 12-12 12h-88v88c0 6.6-5.4 12-12 12h-32c-6.6 0-12-5.4-12-12v-88h-88c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h88v-88c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v88h88c6.6 0 12 5.4 12 12zm96-160v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zm-48 346V86c0-3.3-2.7-6-6-6H54c-3.3 0-6 2.7-6 6v340c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"
+						></path>
+                    </svg>
+                </span>
+                <span class="heading">Grocery </span>
+				<span class="iconHolder profilePic" title="Click to Log Out">
+					<img src="https://avatars.dicebear.com/api/male/Cat.svg?mood[]=happy" alt="Profile Picture" height="32" width="32">
+				</span>
+			</div>
+			<!-- List -->
+			<div class="listContainer"></div>
+		</div>
+		<script src="./assets/js/functions.js"></script>
+		<script src="./assets/js/app.js"></script>
+                <script>if('serviceWorker' in navigator) {
+                    window.addEventListener('load', () => {
+                        navigator.serviceWorker.register('serviceworker.js')
+                            .then((reg) => console.log('Success: ', reg.scope))
+                            .catch((err) => console.log('Failure: ', err));
+                    })
+                }</script>
+	</body>
+</html>

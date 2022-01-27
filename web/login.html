@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Login to Continue">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./assets/css/login.css">
+    <script src="./assets/js/middleware.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <span class="siteTitle">Grocery App</span>
+        <div class="form">
+            <span id="title" data-id="login">Login</span>
+            <p class="errorMessage"></p>
+            <input type="hidden" name="name" aria-label="Name" id="name" placeholder="Name" autocomplete="off">
+            <input type="text" name="username" aria-label="User Name" id="username" placeholder="User Name" autocomplete="off">
+            <input type="password" name="password" aria-label="Password" id="password" placeholder="Password">
+
+            <div class="buttonContainer">
+                <button id="button">Login</button>
+            </div>
+        </div>
+
+        <span class="unselectable spanClick" id="changeStuff">Don't have an account? Sign Up</span>
+    </div>
+    <script src="./assets/js/functions.js"></script>
+    <script src="./assets/js/login.js"></script>
+</body>
+</html>
